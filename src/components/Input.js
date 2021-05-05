@@ -2,12 +2,21 @@ import React from "react";
 import "./Input.scss";
 import { Button } from "@material-ui/core";
 import { useForm } from "react-hook-form";
+import { useDispatch } from "react-redux";
+import { addTodo } from "../features/allTodosSlice";
 
 function Input({ buttonTitle }) {
   const { register, handleSubmit, setValue } = useForm();
+  const dispatch = useDispatch();
 
   const onSubmit = (data) => {
-    console.log(data);
+    dispatch(
+      addTodo({
+        data: data.todo,
+        id: Date.now(),
+        done: false,
+      })
+    );
     setValue("todo", "");
   };
 
