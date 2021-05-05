@@ -1,0 +1,19 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+}
+
+.allScreen {
+}
+
+.activeScreen {
+}
+
+.completedScreen {
+  margin-top: 50px;
+
+  &__icon {
+    margin-top: 10px !important;
+    margin-left: auto !important;
+  }
+}

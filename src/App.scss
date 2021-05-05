@@ -1,0 +1,22 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+  }
+
+  &__header {
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__body {
+    width: 50%;
+    border-top: 1px solid gray;
+  }
+}

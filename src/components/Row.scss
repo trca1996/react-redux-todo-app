@@ -1,0 +1,21 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+
+  p {
+    padding-left: 20px;
+  }
+
+  &__checked {
+    text-decoration: line-through;
+  }
+
+  &__icon {
+    margin-left: auto !important;
+    margin-right: 20px !important;
+  }
+}
