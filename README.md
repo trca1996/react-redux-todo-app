@@ -70,4 +70,4 @@ $ npm start
 
 ## Contact
 
-- GitHub [@your-username](https://{github.com/trca1996})
+- GitHub [@trca1996](https://github.com/trca1996)
