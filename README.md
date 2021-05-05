@@ -41,6 +41,8 @@
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/web/guides/quick-start)
+- [React Hook Form](https://react-hook-form.com/get-started/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [Node Sass](https://www.npmjs.com/package/node-sass)
 - [Material-UI](https://material-ui.com/)
