@@ -16,7 +16,11 @@ function AllScreen() {
   return (
     <div className="screen allScreen">
       <Input buttonTitle="Add" />
-      {renderTodos(allTodos)}
+      {allTodos.length === 0 ? (
+        <p className="row">"Add tasks 📄📄📃"</p>
+      ) : (
+        renderTodos(allTodos)
+      )}
     </div>
   );
 }

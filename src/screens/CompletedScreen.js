@@ -19,13 +19,22 @@ function CompletedScreen() {
     });
   };
 
+  const ifHaveCompletedTodos = () => {
+    const completed = allTodos.some(({ done }) => done === true);
+    return completed;
+  };
+
   const handleDeleteAll = () => {
     dispatch(deleteAllTodos());
   };
 
   return (
     <div className="screen completedScreen">
-      {renderCompletedTodos(allTodos)}
+      {ifHaveCompletedTodos() ? (
+        renderCompletedTodos(allTodos)
+      ) : (
+        <p className="row">"No completed tasks 😢"</p>
+      )}
 
       <Button
         variant="contained"

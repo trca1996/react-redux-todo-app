@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import "./LinkButton.scss";
 
-function LinkButton({ title }) {
+function LinkButton({ title, active }) {
   const history = useHistory();
 
   const goTo = (title) => {
@@ -21,7 +21,7 @@ function LinkButton({ title }) {
   return (
     <button
       onClick={() => history.push(`${goTo(title)}`)}
-      className="linkButton"
+      className={`linkButton ${active ? "linkButton__active" : ""}`}
     >
       {title}
     </button>

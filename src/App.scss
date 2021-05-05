@@ -1,5 +1,6 @@
 .app {
   display: flex;
+  height: 90vh;
   flex-direction: column;
   align-items: center;
 
@@ -18,5 +19,16 @@
   &__body {
     width: 50%;
     border-top: 1px solid gray;
+  }
+
+  &__createBy {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: auto;
+  }
+
+  &__userName {
+    text-decoration: underline;
   }
 }

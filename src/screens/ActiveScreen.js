@@ -20,7 +20,11 @@ function ActiveScreen() {
     <div className="screen activeScreen">
       <Input buttonTitle="Add" />
 
-      {renderActiveTodos(allTodos)}
+      {allTodos.length === 0 ? (
+        <p className="row">"Add tasks 📄📄📃"</p>
+      ) : (
+        renderActiveTodos(allTodos)
+      )}
     </div>
   );
 }
